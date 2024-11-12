@@ -26,3 +26,12 @@
      select text; <kbd>ctrl</kbd> + <kbd>/</kbd> (I think - let me know if it doesn't work!)
    
 1. You. (I didn't have a second list item at the time of writing.)
+
+1. Autocomplete:
+   
+   <kbd>ctrl</kbd> + <kbd>/</kbd>
+
+   You have your options conveniently laid out for you, so you don't have to guess which arguments a function takes, or which functions can come next!
+
+1. [The documentation spells it out nice and clearly, too.](https://typst.app/docs/reference) Obviously you're already using this, but it's always worth remembering that these things don't have to feel vague or fuzzy.
+  
