@@ -13,6 +13,8 @@
    #set page(numbering: "1") // adds the page number - and for the record, it's weird as hell that the "numbering" parameter is a string, but it automatically does all kinds of crap to it
    ```
 
+   I think that this is appropriately clean for your use case. We can get onto variables later, and then you'll probably realise that they're something you've learned before! :D
+
 ## Miscellaneous Useful Things!
 
 1. The shortcut for commenting something out (so you can do things like \"disable\" sections of formatting, to see what's causing what):\
