@@ -17,7 +17,7 @@
 
 ## Miscellaneous Useful Things!
 
-1. The shortcut for commenting something out (so you can do things like \"disable\" sections of formatting, to see what's causing what):\
+1. The shortcut for commenting something out (so you can do things like \"disable\" sections of formatting, to see what's causing what):
    
     * ___Mac:___\
      select text; <kbd>cmd</kbd> + <kbd>/</kbd>
