@@ -15,6 +15,39 @@
 
    I think that this is appropriately clean for your use case. We can get onto variables later, and then you'll probably realise that they're something you've learned before! :D
 
+1. Make formatting apply throughout the document (as in, so that font size doesn't need to be set individually for each heading, for example):
+
+   ```typst
+   #set page(
+      paper: "a5",
+   )
+   #set text(
+      font: "Noto Sans",
+      size: 10pt
+   )
+   #set align(
+      center
+   )
+   #show heading.where(level: 2): set text(17pt) // this applies the formatting to all headings (assigned using "=="), as opposed to the previous version, where you just set the font size of that specific line
+   #show heading.where(level: 3): set text(14pt, weight: "regular")
+   // #show heading: set text(17pt) - this is what the syntax (for styling headings) looks like without the added stuff about specifying levels
+   // usually I'd add in the parameter name for consistency (as in, "size: 14pt"), but it doesn't matter here, and I thought it might be clearer to make the fewest changes to what you wrote
+   // since headings are bold by default, the font weight needs to be manually set to match what you had
+    
+   == Man o' War
+   // #text(17pt)[== Man o' War] - previous version where you set a font size for each individual line
+    
+   === Patrick Ball
+   // #text(14pt)[Patrick Ball] - previous version where you set a font size for each individual line
+    
+   #pagebreak()
+   #counter(page).update(1)
+    
+   #set page(
+      numbering: "1"
+   )
+   ```
+
 ## Miscellaneous Useful Things!
 
 1. The shortcut for commenting something out (so you can do things like \"disable\" sections of formatting, to see what's causing what):
